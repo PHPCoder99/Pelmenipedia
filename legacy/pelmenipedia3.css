@@ -24,10 +24,6 @@ header{
   justify-content: center;
 }
 
-.blocks{
-  padding: 0 200px
-}
-
 header a {
   text-decoration: none;
   color: #FFFAFA;
@@ -232,20 +228,4 @@ div[class^='block']:nth-child(odd), div[class*=' block']:nth-child(odd){
           display: flex;
       }
 
-      div[class^='block'], div[class*=' block'], div[class^='block']:nth-child(odd), div[class*=' block']:nth-child(odd){
-        padding: 30px 50px;
-      }
-
-      .recipe-card{
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-      }
-
-      .recipe-card img{
-        width: 80%;
-        height: 80%;
-        margin-right: 0;
-        margin-bottom: 20px;
-      }
 }

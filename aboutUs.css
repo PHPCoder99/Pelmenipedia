@@ -232,3 +232,15 @@ div[class^='block']:nth-child(odd), div[class*=' block']:nth-child(odd){
       }
 
 }
+
+@media screen and (max-width: 528px){
+  .recipe-card{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .recipe-card img{
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
