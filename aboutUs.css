@@ -102,6 +102,11 @@ div[class^='block']:nth-child(odd), div[class*=' block']:nth-child(odd){
     padding: 30px 150px;
 }
 
+div[class^='block']:nth-child(odd).dark, div[class*=' block']:nth-child(odd).dark{
+    background-color: #222;
+    padding: 30px 150px;
+}
+
 .recipe-card{
   display: flex;
   text-align: left;
@@ -197,6 +202,16 @@ div[class^='block']:nth-child(odd), div[class*=' block']:nth-child(odd){
       width: 100%;
       background-color: white;
       border-radius: 10px;
+  }
+
+  body.dark{
+    background-color: #111;
+    color: #fff;
+  }
+
+  .navbar.dark{
+    background-color: #222;
+    color: #fff;
   }
 
   @media (max-width: 800px) {
