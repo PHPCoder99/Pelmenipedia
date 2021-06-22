@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./reviews.css">
+	<link rel="shortcut icon" href="./img/pelmenipedia.jpg" type="image/x-icon">
+	<title>Отзовы</title>
+</head>
+<body>
+  <nav class="navbar">
+      <div class="brand-title"><img src="./img/pelmenipedia.jpg" class="logo" />Pelmenipedia</div>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+  <div class="navbar-links">
+    <ul>
+			<li class="link"><a href="index.html"> Главная </a></li>
+      <li class="link"><a href="#" class="change-theme">Поменять тему</a></li>
+      <li class="link"><a href="https://github.com/PHPCoder99/Pelmenipedia" Target= "_blank"> GitHub </a></li>
+      <li class="link"><a href="https://discord.gg/J7nHsS8YqQ" Target= "_blank"> Discord </a></li>
+      <li class="link"><a href="aboutUs.html"> О нас </a></li>
+      <li class="link"><a href="reviews.html"> Отзывы </a></li>
+    </ul>
+  </div>
+</nav>
+	<h1>Отзывы</h1>
+	<div class="block01">
+		<form>
+			<textarea rows="4" placeholder="Введите комментарий..." class="review"></textarea>
+	    <br>
+			<input type="submit" value="Отправить" onclick="event.preventDefault()" class="submit-btn">
+		</form>
+	</div>
+	<script src="./reviews.js"></script>
+</body>
+</html>

@@ -1,6 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Sen&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght200&family=Sen&display=swap');
 
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 20px;
+}
+
 body{
   font-family: 'Montserrat';
   font-weight: 300;
@@ -22,6 +38,10 @@ ul {
 header{
   display: flex;
   justify-content: center;
+}
+
+.blocks{
+  padding: 0 200px
 }
 
 header a {
@@ -62,12 +82,6 @@ h1 {
   animation-duration: 3s;
   font-size: 250%;
 }
-
-.title {
-  margin: 0 auto;
-  text-align: center;
-}
-
 .brand-title {
     display: flex;
     align-items: center;
@@ -106,25 +120,6 @@ div[class^='block']:nth-child(odd).dark, div[class*=' block']:nth-child(odd).dar
     padding: 30px 150px;
 }
 
-.recipe-card{
-  display: flex;
-  text-align: left;
-  align-items: center;
-  padding: 25px;
-  margin: 15px;
-  border: 1px solid #eee;
-  border-radius: 20px;
-}
-
-.recipe-card img{
-  width: 20%;
-  height: 20%;
-  margin-right: 25px;
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
-}
-
 .block03 h2{
   margin-top: 1em;
 }
@@ -133,6 +128,68 @@ div[class^='block']:nth-child(odd).dark, div[class*=' block']:nth-child(odd).dar
   margin-bottom: 10px;
   margin-block-start: 0;
   font-size: 150%;
+}
+
+body.dark{
+  background-color: #111;
+  color: #fff;
+}
+
+.navbar.dark{
+  background-color: #222;
+}
+
+textarea{
+  border-radius: 20px;
+  font-family: 'Montserrat';
+  font-weight: 300;
+  font-size: 17.5px;
+  padding: 10px;
+  width: 50%;
+  margin-bottom: 20px;
+  outline: none;
+  border: 1px solid #eee;
+  max-width: 80%;
+  min-width: 20%;
+  min-height: 50px;
+}
+
+input[type="submit"]{
+  border-radius: 20px;
+  font-family: 'Montserrat';
+  font-weight: 300;
+  font-size: 17.5px;
+  padding: 15px 25px;
+  border: 1px solid #eee;
+  background-color: #efefef;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+body.dark textarea{
+  border: 1px solid #fff;
+  background: rgba(165, 165, 165, 0.2);
+  color: white;
+}
+
+body.dark input[type="submit"]{
+  color: white;
+  background-color: rgba(165, 165, 165, 0.2);
+}
+
+.title{
+  margin: 20px;
+}
+
+.block03, .block04{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+.block03 ol, .block04 ol{
+  margin-right: 50px;
 }
 
 @media screen and (max-width: 2450px) {
@@ -152,7 +209,6 @@ div[class^='block']:nth-child(odd).dark, div[class*=' block']:nth-child(odd).dar
       align-items: center;
       background-color: #333;
       color: white;
-      margin-bottom: 25px;
   }
 
   .brand-title {
@@ -203,17 +259,7 @@ div[class^='block']:nth-child(odd).dark, div[class*=' block']:nth-child(odd).dar
       border-radius: 10px;
   }
 
-  body.dark{
-    background-color: #111;
-    color: #fff;
-  }
-
-  .navbar.dark{
-    background-color: #222;
-    color: #fff;
-  }
-
-  @media (max-width: 800px) {
+  @media screen and (max-width: 1400px) {
       .navbar {
           flex-direction: column;
           align-items: flex-start;
@@ -245,16 +291,28 @@ div[class^='block']:nth-child(odd).dark, div[class*=' block']:nth-child(odd).dar
           display: flex;
       }
 
+      div[class^='block'], div[class*=' block'], div[class^='block']:nth-child(odd), div[class*=' block']:nth-child(odd){
+        padding: 30px 50px;
+      }
 }
 
-@media screen and (max-width: 528px){
-  .recipe-card{
-    flex-direction: column;
-    text-align: center;
-  }
+@media screen and (max-width: 632px) {
+    .block03, .block04{
+      flex-direction: column;
+    }
 
-  .recipe-card img{
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
+    .block03 ol, .block04 ol{
+      margin-right: 0;
+    }
+
+    .title{
+      margin: 20px 0;
+    }
+}
+
+@media screen and (max-width: 381px) {
+    h1{
+      font-size: 30px;
+      margin-bottom: 0;
+    }
 }
