@@ -5,12 +5,14 @@ const app = express();
 
 app.listen(3000, () => console.log(__dirname));
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '/public')));
+
+app.use('/public', express.static('public'))
 
 app.get('/', function (req, res){
   res.sendFile(__dirname + '/index.html');
 })
 
-app.get('/recipe/:r', function (req, res){
-  
+app.get('/recipe', function (req, res){
+  res.sendFile(__dirname + '/public/recipe.html');
 })
